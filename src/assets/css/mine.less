@@ -1,0 +1,297 @@
+// mine
+.mine-index {
+    .mine-top {
+        background-color: @primary-color;
+        padding-top: 15px;
+        height: 160px;
+        .card {
+            width: 345px;
+            height: 156px;
+            background: url('../image/mine/mine-bg.png') no-repeat;
+            background-size: 100% 100%;
+            background-position: 100% 100%;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            .id-num {
+                color: #bbbbbb;
+                font-size: 20px;
+                text-align: right;
+            }
+            .user {
+                display: flex;
+                align-items: center;
+                .head {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    margin-right: 7px;
+                }
+                .phone {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .level-info {
+                    margin-top: 5px;
+                    color: @primary-color;
+                    font-size: 12px;
+                    .level {
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: bold;
+                        background: linear-gradient(to right, #006bfd, #00cafc);
+                        background: -webkit-linear-gradient(to right, #006bfd, #00cafc);
+                        border-radius: 10px;
+                        padding: 2px 10px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+        .shadow {
+            width: 375px;
+            height: 46px;
+            top: -35px;
+            position: relative;
+        }
+    }
+}
+
+// auth
+.auth-index {
+    .btn-check {
+        .btn-app;
+        background-color: #fff;
+        color: #001a3b;
+        border: 1px solid #001a3b;
+        margin-top: 19px;
+    }
+    .tip-list {
+        font-size: 13px;
+        color: #666666;
+        padding: 0 15px;
+    }
+    .form-btn {
+        .btn-app;
+        width: 340px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .tip {
+        font-size: 12px;
+        color: @gray-color;
+        background: #fef5e1;
+        padding: 15px 20px;
+    }
+}
+
+// camera-require
+.camera-require {
+    .content {
+        padding: 10px;
+        padding-top: 0;
+    }
+    .title {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .camera-box {
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 15px;
+        text-align: center;
+        .subtitle {
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        .img1 {
+            width: 327px;
+            height: 184px;
+        }
+        .img2 {
+            width: 252px;
+            height: 484px;
+        }
+    }
+}
+
+// buy-manage
+.buy-manage {
+    .no-num {
+        border-radius: 10px;
+        width: 355px;
+        margin: 10px auto;
+        padding: 15px;
+        padding-bottom: 30px;
+        background-color: #fff;
+        text-align: center;
+        img {
+            width: 331px;
+        }
+        font-size: 15px;
+        color: @gray-color;
+    }
+    .btn-app {
+        width: 340px;
+        margin-top: 30px;
+    }
+    .card-box {
+        border-radius: 10px;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: 10px;
+        .van-cell:nth-of-type(1) {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .van-cell__value {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .cell-btn {
+            color: #fff;
+            background-color: @primary-color;
+            padding: 12px 0;
+            font-size: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: center;
+        }
+        .icon {
+            width: 22px;
+            margin-right: 6px;
+        }
+        .icon-s {
+            width: 17px;
+            margin-left: 6px;
+        }
+        .default-text {
+            width: 100%;
+            display: inline-block;
+            .notwrap;
+        }
+        .default-icon {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+    .tip-list {
+        padding: 15px;
+        font-size: 14px;
+        .tip {
+            color: #001a3b;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .tip-text {
+            color: @gray-color;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// add-num
+.add-num {
+    .title {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .pop-title {
+        text-align: center;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .upload-box {
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        .step {
+            font-size: 13px;
+            color: @primary-color;
+            margin-top: 2px;
+        }
+        .upload-img {
+            width: 100px;
+            height: 80px;
+        }
+    }
+    .form-tip {
+        font-size: 13px;
+        color: @gray-color;
+        padding: 15px;
+    }
+    .com-pop-screen {
+        .pop-content {
+            img {
+                width: 100%;
+            }
+            p.ptitle {
+                font-size: 14px;
+                color: #001a3b;
+                font-weight: bold;
+                margin: 10px 0;
+                &:nth-of-type(1) {
+                    margin-top: 0;
+                }
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// bank-idnex
+.bank-index {
+    .tip {
+        font-size: 12px;
+        color: @gray-color;
+        background: #fef5e1;
+        padding: 15px 20px;
+    }
+    .btn-app {
+        margin-top: 40px;
+        width: 340px;
+    }
+}
+
+// verify-num-container
+.verify-num-container {
+    .card-box {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: 15px;
+        .card-title {
+            .flex;
+            font-size: 15px;
+            background-color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            .left {
+                .flexrow;
+                .icon {
+                    width: 22px;
+                    margin-right: 6px;
+                }
+            }
+        }
+        .card-text {
+            font-size: 13px;
+            margin-top: 20px;
+            p {
+                margin-top: 10px;
+            }
+        }
+        .card-bot {
+            color: @primary-color;
+            font-size: 13px;
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+}

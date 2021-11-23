@@ -1,0 +1,78 @@
+import Vue from 'vue'
+import {
+    Tabbar,
+    TabbarItem,
+    NavBar,
+    Icon,
+    Col,
+    Row,
+    NoticeBar,
+    Swipe,
+    SwipeItem,
+    Card,
+    Cell,
+    CellGroup,
+    Grid,
+    GridItem,
+    Image,
+    List,
+    PullRefresh,
+    Button,
+    Tab,
+    Tabs,
+    Empty,
+    Dialog,
+    Uploader,
+    Field,
+    Form,
+    Popup,
+    Area,
+    Radio,
+    RadioGroup,
+    Checkbox,
+    CheckboxGroup,
+    ActionSheet,
+    Collapse,
+    CollapseItem,
+    Switch,
+    Toast,
+    Divider
+} from 'vant';
+
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Col);
+Vue.use(Row);
+Vue.use(NoticeBar);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Card);
+Vue.use(Cell);
+Vue.use(CellGroup);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(Image);
+Vue.use(List);
+Vue.use(PullRefresh);
+Vue.use(Button);
+Vue.use(Tab);
+Vue.use(Tabs);
+Vue.use(Empty);
+Vue.use(Dialog);
+Vue.use(Uploader);
+Vue.use(Field);
+Vue.use(Form);
+Vue.use(Popup);
+Vue.use(Area);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Checkbox);
+Vue.use(CheckboxGroup);
+Vue.use(ActionSheet);
+Vue.use(Collapse);
+Vue.use(CollapseItem);
+Vue.use(Switch);
+Vue.use(Toast);
+Vue.use(Divider);

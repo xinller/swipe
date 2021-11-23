@@ -1,0 +1,283 @@
+// invite
+.invite-index {
+    .invite-top {
+        width: 375px;
+        height: 229.5px;
+        background: url('../image/invite/invite-bg.png') no-repeat;
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+        text-align: center;
+        .asset {
+            font-size: 45px;
+            color: #fff;
+            padding-top: 25px;
+        }
+        .sub {
+            font-size: 13px;
+            color: #fff;
+        }
+        .card {
+            width: 345px;
+            height: 119px;
+            margin: 0 auto;
+            box-shadow: 0px 9px 14px 8px rgba(0, 168, 252, 0.05), 0px 6px 16px 0px rgba(0, 168, 252, 0.25),
+                0px 3px 6px -4px rgba(0, 168, 252, 0.02);
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            .item {
+                width: 50%;
+                .num {
+                    font-size: 18px;
+                    color: #292929;
+                    font-weight: bold;
+                    span {
+                        font-size: 12px;
+                        font-weight: normal;
+                    }
+                }
+                .gray {
+                    color: @gray-color;
+                    font-size: 12px;
+                }
+            }
+            .item:nth-of-type(1) {
+                border-right: 1px solid #f1f1f1;
+            }
+        }
+    }
+    .rule {
+        font-size: 16px;
+        color: @primary-color;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .rule-list {
+        font-size: 12px;
+        color: #001a3b;
+        background-color: #fff;
+        border-radius: 10px;
+        // height: 166px;
+        width: 355px;
+        margin: 0 auto;
+        padding: 20px 18px 0px;
+        text-align: left;
+        box-sizing: border-box;
+        ul {
+            height: 118px;
+            li {
+                margin-top: 5px;
+            }
+        }
+        .tag {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 46.5px;
+            font-size: 12px;
+            border-top: 1px solid #f1f1f1;
+            font-weight: bold;
+            a {
+                color: @red-color;
+            }
+        }
+    }
+    .btn-invite {
+        background-color: @primary-color;
+        color: #fff;
+        width: 356px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+// invite-reward
+.invite-reward {
+    .reward-bg {
+        width: 375px;
+        height: 75px;
+    }
+    .record-list {
+        .list-title {
+            background-color: #001a3b;
+            color: #fff;
+            font-size: 13px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            .van-tabs__nav {
+                background-color: transparent;
+                .van-tabs__line {
+                    background-color: @primary-color;
+                }
+            }
+        }
+        .list-body {
+            font-size: 12px;
+            height: 41px;
+            line-height: 41px;
+            border-bottom: 1px solid #f1f1f1;
+            text-align: center;
+            background-color: #fff;
+        }
+    }
+}
+
+// invite-rank-container
+.invite-rank-container {
+    .rank-list {
+        padding: 15px;
+        font-size: 12px;
+        .rank-title {
+            background-color: @primary-color;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .rank-body {
+            background-color: #fff;
+            &:nth-last-of-type(1) {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        .van-col {
+            padding: 14px 0;
+            text-align: center;
+        }
+    }
+}
+
+// promote-reward-container
+.promote-reward-container {
+    .card-top {
+        height: 168px;
+        background: url('../image/invite/rule-bg.png') no-repeat;
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+        background-color: #fff;
+        padding: 20px;
+        .user {
+            .flexrow;
+            .head {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .level {
+                font-size: 17px;
+                color: #292929;
+                .wt-bold;
+            }
+        }
+        .desc-box {
+            margin-top: 25px;
+            text-align: center;
+            .desc {
+                font-size: 12px;
+            }
+            .num {
+                font-size: 19px;
+                color: #292929;
+                .wt-bold;
+            }
+        }
+    }
+    .rule-box {
+        padding: 10px;
+        background-color: #fff;
+        .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            .wt-bold;
+        }
+        .table {
+            border-radius: 10px;
+            .thead,
+            .tbody {
+                .flex;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+
+                .td {
+                    width: 20%;
+                    color: #fff;
+                    font-size: 14px;
+                    text-align: center;
+                    // padding: 5px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid rgba(20, 20, 20, 0.2);
+                    border-bottom: 1px solid rgba(20, 20, 20, 0.2);
+                }
+
+                &.active {
+                    .td {
+                        color: @primary-color;
+                    }
+                }
+            }
+
+            &.rule {
+                .thead,
+                .tbody {
+                    .td:nth-of-type(1),
+                    .td:nth-of-type(2) {
+                        width: 15%;
+                    }
+                    .td:nth-of-type(5) {
+                        width: 20%;
+                    }
+                    .td {
+                        width: calc(50% / 2);
+                    }
+                }
+            }
+            .thead {
+                .td:nth-last-of-type(1) {
+                    border-top-right-radius: 10px;
+                    border-left: 1px solid rgba(20, 20, 20, 0.2);
+                }
+                .td:nth-of-type(1) {
+                    border-top-left-radius: 10px;
+                }
+            }
+            .tbody {
+                background-color: #fff;
+                .td {
+                    color: #292929;
+                    // padding: 5px;
+                }
+                .td:nth-of-type(1) {
+                    background-color: rgba(0, 0, 0, 0.15);
+                    border-left: 1px solid rgba(20, 20, 20, 0.2);
+                }
+                &:nth-last-of-type(1) {
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    .td:nth-of-type(1) {
+                        border-bottom-left-radius: 10px;
+                    }
+                    .td:nth-last-of-type(1) {
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

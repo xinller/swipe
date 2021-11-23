@@ -1,0 +1,484 @@
+.hall-manual-grab {
+    .hall-top {
+        padding: 10px;
+        .flex;
+        .left {
+            font-size: 14px;
+            color: @primary-color;
+        }
+        .right {
+            width: 71px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            font-size: 12px;
+            border: 1px solid #001a3b;
+            border-radius: 13px;
+            color: #001a3b;
+        }
+    }
+    .round {
+        border: 1px solid #bbbbbb;
+        color: @gray-color;
+        margin-left: 5px;
+        font-size: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+}
+// 抢单动画效果
+.grab-timeout-page {
+    position: relative;
+    .close_btn {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    .grabing {
+        background: url('../../assets/image/task/grabing-bg.png') no-repeat;
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+        width: 300px;
+        height: 111px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #292929;
+        font-weight: bold;
+    }
+    .grab-time {
+        padding: 15px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .cell-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .btn-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        .left-btn {
+            color: #fff;
+            background: #bbbbbb;
+            font-size: 16px;
+            padding: 15px 0;
+            width: 50%;
+        }
+        .right-btn {
+            color: #fff;
+            background: #00a8fc;
+            font-size: 16px;
+            padding: 15px 0;
+            width: 50%;
+        }
+    }
+}
+// grab-rule-container
+.grab-rule-container {
+    .rule-box {
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 15px 20px;
+        .rule-title {
+            font-size: 18px;
+            color: #001a3b;
+            font-weight: bold;
+        }
+        .rule-sub {
+            font-size: 14px;
+            color: #001a3b;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .rule-content {
+            font-size: 14px;
+            color: #001a3b;
+            margin-top: 30px;
+        }
+    }
+}
+
+// grab-setnum-container
+.grab-setnum-container {
+    .card-box {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: 10px;
+        .van-cell {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .icon {
+            width: 22px;
+            margin-right: 10px;
+        }
+        .icon-s {
+            width: 17px;
+            margin-right: 6px;
+        }
+        .btn-manage {
+            color: @primary-color;
+            font-size: 15px;
+            text-align: center;
+            padding: 12px;
+        }
+    }
+    .tips {
+        font-size: 13px;
+        color: @gray-color;
+        padding: 15px;
+        a {
+            color: @primary-color;
+        }
+    }
+}
+
+// 货比三家
+.shop-mark-container {
+    .mark-box {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: 10px;
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .desc {
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .keywords {
+            font-size: 15px;
+            color: @primary-color;
+            margin-top: 20px;
+            .wt-bold;
+        }
+        .subtitle {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 13px;
+        }
+        .input-box {
+            .flex;
+            .mt-10;
+            input {
+                width: 250px;
+                height: 44px;
+                background-color: #f1f1f1;
+                border-radius: 10px;
+                padding: 0 15px;
+                font-size: 14px;
+            }
+            input.mini {
+                width: 210px;
+            }
+            span.action {
+                color: @primary-color;
+                font-size: 12px;
+            }
+            .btn-sm {
+                width: 62px;
+                height: 35px;
+                color: #fff;
+                border-radius: 10px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 15px;
+            }
+            .btn-sm.red {
+                background-color: @red-color-light;
+            }
+            .btn-sm.primary {
+                background-color: @primary-color;
+            }
+        }
+        .tip {
+            color: @red-color;
+            font-size: 13px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        .card-prod {
+            .flexrow;
+            font-size: 13px;
+            color: #292929;
+            margin-top: 15px;
+            .thumb {
+                width: 65px;
+                height: 65px;
+                margin-right: 10px;
+            }
+            .prod-desc {
+                flex: 1;
+                .item {
+                    margin-bottom: 2px;
+                    .flex;
+                }
+            }
+        }
+        .spec-title {
+            color: @primary-color;
+            font-size: 12px;
+        }
+        // 上传图片
+        .upload {
+            margin-top: 15px;
+            width: 100px;
+            .van-uploader .upload-img {
+                width: 100px;
+                height: 80px;
+            }
+        }
+        .checkbox-list {
+            font-size: 14px;
+            .van-checkbox {
+                margin-top: 15px;
+            }
+            .van-checkbox__label {
+                display: flex;
+            }
+        }
+        .btn-commit {
+            .btn-app;
+            .mt-20;
+        }
+        .btn-copy {
+            border: 1px solid #001a3b;
+            font-size: 12px;
+            width: 45px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    }
+    .tip-wrap {
+        .plr-15;
+        .mt-5;
+        .pb-15;
+        .size-12;
+        .title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 13px;
+        }
+    }
+    .tip_jg {
+        color: #f2000b;
+        background-color: #fef5e1;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .screen-card {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 13px;
+        .screen-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .screen-desc {
+            font-size: 14px;
+            margin-top: 12px;
+        }
+        .img {
+            width: 325px;
+            margin-top: 10px;
+        }
+    }
+    .upload-box {
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        .upload-img {
+            width: 100px;
+            height: 80px;
+        }
+    }
+}
+// 订单详情
+.step-detail {
+    .van-collapse-item__content {
+        .c-lt-black;
+    }
+    .shop-card {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        width: 355px;
+        margin: 10px auto;
+        .card-list {
+            .flex;
+            font-size: 14px;
+            margin-top: 5px;
+            .pre-sale {
+                background-color: @primary-color;
+                color: #fff;
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 10px;
+            }
+            .pre-zp {
+                background-color: orange;
+                color: #fff;
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 10px;
+            }
+            .round {
+                border: 1px solid #bbbbbb;
+                color: @gray-color;
+                margin-left: 5px;
+                font-size: 12px;
+                border-radius: 50%;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+            }
+            .btn-copy,
+            .btn-close {
+                color: #fff;
+                font-size: 12px;
+                padding: 1px 15px;
+                background-color: @primary-color;
+                border-radius: 10px;
+                margin-right: 0;
+            }
+            .card-left {
+                .flex;
+                .thumb {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 10px;
+                }
+                .desc {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    // 步骤1 找到宝贝
+    .accord_find_baby {
+        .site {
+            .flex;
+            border-bottom: 1px solid #f1f1f1;
+            padding: 5px 0;
+            .text {
+                font-size: 12px;
+            }
+        }
+        .find_key {
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+    .thumb {
+        width: 80px;
+        height: 80px;
+    }
+    .step_btn {
+        // background-color: @primary-color;
+        color: #fff;
+        padding: 4px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    // 步骤2 下单付款
+    .accord_pay {
+        .pay_item {
+            .flex;
+            font-size: 12px;
+            padding: 5px;
+        }
+        .line_b {
+            border-bottom: 1px solid @line-color;
+        }
+    }
+}
+
+// 验证店铺
+.step-check-container {
+    .desc {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+    .thumb {
+        width: 347px;
+        margin-top: 5px;
+    }
+}
+
+.how-comment-container {
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+    .desc {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+.close-task-dialog.dialog-box {
+    padding: 30px 0 0;
+    .btn-yy {
+        border: 1px solid #eee;
+        border-radius: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        &.active,
+        &:hover {
+            background-color: @primary-color;
+            color: #fff;
+        }
+    }
+    .tip {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .van-dialog__footer {
+        margin-top: 20px;
+    }
+    .dialog-footer {
+        margin-top: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .cancel {
+            border: 0;
+            border-right: 1px solid #f1f1f1;
+            width: 50%;
+        }
+        .sure {
+            border: 0;
+            color: @red-color;
+            width: 50%;
+        }
+    }
+}
